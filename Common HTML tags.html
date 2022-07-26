@@ -1,0 +1,750 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0043)http://www.thuto.org/ubh/web/html/tags1.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Common HTML tags</title>
+
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="keywords" content="HTML, tags, elements">
+<meta name="description" content="Common HTML tags, and special characters">
+<style type="text/css">
+<!--
+td
+   {
+   vertical-align: top;
+   }
+td.sce
+   {
+   font-size: larger;
+   font-weight: bolder;
+   font-family: monospace;
+   }
+table#str caption
+   {
+   background-color: #FF0000;
+   color: #FFFFF0;
+   text-align: center;
+   border: solid thick #990000;
+   }
+td.ok
+   {
+   background-color: #CCFFCC;
+   }
+td.marginal
+   {
+   background-color: #FFFF99;
+   }
+td.bad
+   {
+   background-color: #FFCCCC;
+   }
+td.null, th.null
+   {
+   background-color: #CCCCCC;
+   }
+th.s1
+   {
+   background-color: #00CC00;
+   color: #FFFFFF;
+   }
+th.s2
+   {
+   background-color: #00CC00;
+   color: #FF0000;
+   }
+th.s3
+   {
+   background-color: #00CC00;
+   color: #DCDCDC;
+   }
+th.st1
+   {
+   background-color: #0000CC;
+   color: #FFFFFF;
+   }
+
+div.code
+   {
+   background-color: #F0F8FF;
+   padding: 12px;
+  
+   }
+   div.output
+      {
+   background-color: #F0FFF0;
+   padding: 12px;
+  
+   }
+   h2,h3,h4, h5, h6
+   {
+   padding: 8px;
+   }
+h2
+   {
+   background-color: #FFFF66;
+   width: 80%;
+   }
+h2.plain
+   {
+   background-color: transparent;
+   width: 100%;
+   }
+h3
+   {
+   background-color: #FFFF99;
+   width: 60%;
+   }
+h4
+   {
+   background-color: #FFFFCC;
+   width: 40%;
+   }
+h5
+   {
+   background-color: #FFFFCC;
+   width: 35%;
+   }
+span.yellowbacktext
+   {
+   background-color: #FFFF99;
+   padding: 1 px;
+   color: #990000;
+   }
+-->
+</style>
+
+</head>
+<body bgcolor="#FFFFF0" text="#000000">
+<center style="padding: 7px">
+<p><strong><a name="doc_top">University of Botswana History Department</a></strong></p>
+</center>
+<table summary="Layout" width="100%" cellpadding="15" cellspacing="0" style="border: solid medium #FFCCFF">
+<tbody><tr>
+<td bgcolor="#FFCCFF" width="100%" valign="middle" style="border: double thick #CC00CC">
+<center><h1>Common HTML tags</h1></center>
+</td>
+</tr></tbody></table>
+<center style="padding: 7px">
+<a href="http://www.thuto.org/ubh/web/html/html0.htm">HTML Index Page</a>
+&nbsp; | &nbsp;
+<a href="http://www.thuto.org/ubh/h-index.htm">Site Index</a>
+
+</center>
+
+<hr>
+
+<p>On this page you will find an alphabetical list of a number
+of the most common HTML tags, <a href="http://www.thuto.org/ubh/web/html/tags1.htm#pre-tag">a note on the &lt;PRE&gt; 
+element</a>, a <a href="http://www.thuto.org/ubh/web/html/tags1.htm#qtag">note on the &lt;Q&gt; element</a>
+a <a href="http://www.thuto.org/ubh/web/html/tags1.htm#special-characters">note on special characters</a>,
+a <a href="http://www.thuto.org/ubh/web/html/tags1.htm#structural">note on structural versus formatting elements</a>,
+and a <a href="http://www.thuto.org/ubh/web/html/tags1.htm#deprecated-def">note on the meaning of "deprecated"</a>.</p>
+
+
+<table summary="Common HTML tags" border="1" cellpadding="6">
+<tbody><tr>
+<th bgcolor="#FFFFCC" onmouseover="this.style.backgroundColor=&#39;#FF0000&#39;; this.style.color=&#39;#FFFFCC&#39;" onmouseout="this.style.backgroundColor=&#39;#FFFFCC&#39;; this.style.color=&#39;#000000&#39;">Tag</th>
+<th bgcolor="#FFFF99" onmouseover="this.style.backgroundColor=&#39;#FF0000&#39;; this.style.color=&#39;#FFFF99&#39;" onmouseout="this.style.backgroundColor=&#39;#FFFF99&#39;; this.style.color=&#39;#000000&#39;" style="background-color: rgb(255, 0, 0); color: rgb(255, 255, 153);">Description</th>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;A&gt; &lt;/A&gt;</td>
+<td bgcolor="#FFFF99">Anchor. See <a href="http://www.thuto.org/ubh/web/html/html01.htm#links">introduction to HTML</a></td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;B&gt; &lt;/B&gt;</td>
+<td bgcolor="#FFFF99">Content is shown as bold type</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;BIG&gt; &lt;/BIG&gt;</td>
+<td bgcolor="#FFFF99">Content is shown in large type.
+BIG and SMALL can be nested (thus: 
+&lt;BIG&gt;&lt;BIG&gt;nested&lt;/BIG&gt;&lt;/BIG&gt;)
+to further increase or decrease font size.</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;BLOCKQUOTE&gt; &lt;/BLOCKQUOTE&gt;</td>
+<td bgcolor="#FFFF99">Content is shown as an indented block; should be used only for long quotations.
+See <a href="http://www.thuto.org/ubh/web/html/tags1.htm#qtag">note on &lt;Q&gt; tag</a>.</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;BODY&gt; &lt;/BODY&gt;</td>
+<td bgcolor="#FFFF99">The body part of the HTML document. See introductio to HTML</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;BR&gt;</td>
+<td bgcolor="#FFFF99">Force line break within paragraph. Note that
+"floating elements" such as images are separate from the paragraph.
+To start next line below any images etc., use 
+&lt;BR CLEAR="all"&gt;. The CLEAR attribute can take values
+"none", "right", "left", or "all" and is <a href="http://www.thuto.org/ubh/web/html/tags1.htm#deprecated-def">deprecated</a>, but in
+fact still very useful. The best way to understand it is to try
+a few tests.</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;CENTER&gt; &lt;/CENTER&gt;</td>
+<td bgcolor="#FFFF99">Content is centred on page (can include paragraphs etc). Note American spelling.</td>
+</tr>
+
+<tr>
+<td bgcolor="#FFFFCC"><a name="del">&lt;DEL&gt; &lt;/DEL&gt;</a></td>
+<td bgcolor="#FFFF99">Used to indicate a deletion from a previous version of a
+document. Normally combined with INS (insert) which marks the new version.
+Rendered in strike-through font like &lt;S&gt;. See
+<a href="http://www.thuto.org/ubh/web/html/tags1.htm#structural">note on structural <i>versus</i> formatting elements</a>.
+Example: <ins>insert this</ins> 
+<del>delete this</del>.
+</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;DIV&gt; &lt;/DIV&gt;</td>
+<td bgcolor="#FFFF99">A dummy element which contains block-level elements.
+It is used with <a href="http://www.thuto.org/ubh/web/html/css01.htm">style sheets</a>.</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;EM&gt; &lt;/EM&gt;</td>
+<td bgcolor="#FFFF99">Emphasis: text usually displayed in italics</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;FONT&gt; &lt;/FONT&gt;</td>
+<td bgcolor="#FFFF99">Used to define characteristics of font, according to attributes e.g. SIZE, COLOR, FACE. SIZE sets size, 1-7 e.g. SIZE="5". COLOR sets colour of text e.g. &lt;FONT COLOR="#FF0000"&gt; makes text red. FACE e.g. FACE="Times".<br>
+NB: &lt;FONT&gt; is <em><a href="http://www.thuto.org/ubh/web/html/tags1.htm#deprecated-def">deprecated</a></em> in favour of style sheets,
+but remains useful because it is safer with old browsers.
+</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;HEAD&gt; &lt;/HEAD&gt;</td>
+<td bgcolor="#FFFF99">The head part of the HTML document. See introductio to HTML</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;H1&gt; &lt;/H1&gt;
+<br>&lt;H2&gt; &lt;/H2&gt;<br>...<br>&lt;H6&gt; &lt;/H6&gt;</td>
+<td bgcolor="#FFFF99">Headings (levels 1-6, i.e. H3 is a subheading within a H2 subheading).
+See <a href="http://www.thuto.org/ubh/web/html/tags1.htm#structural">note on structural <i>versus</i> formatting elements</a>.</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;HR&gt;</td>
+<td bgcolor="#FFFF99">Draw horizontal line across page; used to indicate break between sections. Attributes: WIDTH, e.g. WIDTH="50%" makes line half size of page; SIZE, e.g. SIZE="3" makes line 3 pixels thick</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;I&gt; &lt;/I&gt;</td>
+<td bgcolor="#FFFF99">Italics.</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;IMG&gt;</td>
+<td bgcolor="#FFFF99">Image. Attributes: must have SRC and ALT.
+SRC gives source file for image, e.g. SRC="picture.jpg".
+ALT gives brief description e.g. ALT="Picture of UB"</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;INS&gt;  &lt;/INS&gt;</td>
+<td bgcolor="#FFFF99"><a href="http://www.thuto.org/ubh/web/html/tags1.htm#del">See DEL</a></td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;LI&gt; &lt;/LI&gt;</td>
+<td bgcolor="#FFFF99">List item. Used within an ordered (&lt;OL&gt;) or unordered (&lt;UL&gt;) list </td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;OL&gt; &lt;/OL&gt;</td>
+<td bgcolor="#FFFF99">Ordered list. Includes &lt;LI&gt; List Items, which will be numbered automatically</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;P&gt; &lt;/P&gt;</td>
+<td bgcolor="#FFFF99">Paragraph</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;PRE&gt; &lt;/PRE&gt;</td>
+<td bgcolor="#FFFF99">Pre-formatted text. See <a href="http://www.thuto.org/ubh/web/html/tags1.htm#pre-tag">note on &lt;PRE&gt;</a></td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;S&gt; &lt;/S&gt;</td>
+<td bgcolor="#FFFF99">Strike-through text: <s>i.e.
+ like this phrase</s>. <a href="http://www.thuto.org/ubh/web/html/tags1.htm#del">See DEL</a></td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;SMALL&gt; &lt;/SMALL&gt;</td>
+<td bgcolor="#FFFF99">Content appears as smaller-size text</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;SPAN&gt; &lt;/SPAN&gt;</td>
+<td bgcolor="#FFFF99">A dummy element which contains in-line content.
+It is used with <a href="http://www.thuto.org/ubh/web/html/css01.htm">style sheets</a>.</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;STRONG&gt; &lt;/STRONG&gt;</td>
+<td bgcolor="#FFFF99">Text is emphasised strongly - usually appears in bold.</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;SUB&gt; &lt;/SUB&gt;</td>
+<td bgcolor="#FFFF99">Subscript</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;SUP&gt; &lt;/SUP&gt;</td>
+<td bgcolor="#FFFF99">Superscript</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;TABLE&gt; &lt;/TABLE&gt;</td>
+<td bgcolor="#FFFF99">Table. See <a href="http://www.thuto.org/ubh/web/html/tables1.htm">page on tables</a>.</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;TD&gt; &lt;/TD&gt;</td>
+<td bgcolor="#FFFF99">Table data cell. See <a href="http://www.thuto.org/ubh/web/html/tables1.htm">page on tables</a>.</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;TH&gt; &lt;/TH&gt;</td>
+<td bgcolor="#FFFF99">Table header cell. See <a href="http://www.thuto.org/ubh/web/html/tables1.htm">page on tables</a>.</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;TITLE&gt; &lt;/TITLE&gt;</td>
+<td bgcolor="#FFFF99">Title of document. This <em>must</em> appear in the &lt;HEAD&gt; part.</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;TR&gt; &lt;/TR&gt;</td>
+<td bgcolor="#FFFF99">Table row. See p<a href="http://www.thuto.org/ubh/web/html/tables1.htm">page on tables</a>.</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;TT&gt; &lt;/TT&gt;</td>
+<td bgcolor="#FFFF99">Monospaced type (useful for tables of figures)</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;U&gt; &lt;/U&gt;</td>
+<td bgcolor="#FFFF99">Underline text. Use sparingly as it may be confused with hyperlinks</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">&lt;UL&gt; &lt;/UL&gt;</td>
+<td bgcolor="#FFFF99">Unordered List. Includes &lt;LI&gt; List Items, which will be displayed in a list with bullets.</td>
+</tr>
+
+</tbody></table>
+<hr>
+<p><small><a name="pre-tag" href="http://www.thuto.org/ubh/web/html/tags1.htm#doc_top">Back to top</a></small></p>
+<h2>Note on &lt;PRE&gt; &lt;/PRE&gt; :</h2>
+<p>The PRE element is used for <em>pre-formatted text</em>. What this
+means is that the text between the opening and closing tags is
+displayed exactly as shown in the HTML file. Normally, any line
+breaks etc. in the HTML file are ignored when the page is displayed:
+instead the browser breaks where it finds a &lt;BR&gt;, starts a 
+new paragraph at a &lt;P&gt;, etc.  One main use for &lt;PRE&gt;
+is when you have a large chunk of text in a plain text file which
+you want to display without having to convert all the paragraphs
+and tables to HTML formatting. The electronic text pages on this
+web-site use &lt;PRE&gt; to display entire chapters from the
+Project Gutenberg plain text etexts.</p>
+
+<p><big>Example:</big></p>
+<p>Consider the following code:</p>
+<div class="code">
+<pre><code>&lt;P&gt;There was an old man of Peru
+Who dreamt he was eating his shoe
+    He woke up in the night
+    With a terrible fright
+And found it was perfectly true&lt;/P&gt;</code></pre>
+</div>
+<p>This will appear as follows:</p>
+<div class="output">
+<p>There was an old man of Peru
+Who dreamt he was eating his shoe
+    He woke up in the night
+    With a terrible fright
+And found it was perfectly true</p>
+</div>
+<p>The spacing and line breaks in the HTML code are ignored. To get
+the right result we would normally use formatting tags:</p>
+<div class="code">
+<p><code>&lt;P&gt;There was an old man of Peru&lt;BR&gt;
+Who dreamt he was eating his shoe&lt;BR&gt;
+    He woke up in the night&lt;BR&gt;
+    With a terrible fright&lt;BR&gt;
+And found it was perfectly true&lt;/P&gt;</code></p>
+</div>
+
+which produces
+<div class="output">
+<p><code>There was an old man of Peru<br>
+Who dreamt he was eating his shoe<br>
+    He woke up in the night<br>
+    With a terrible fright<br>
+And found it was perfectly true</code></p>
+</div>
+
+However, we can use the &lt;PRE&gt; element:
+<div class="code">
+<pre><code>&lt;PRE&gt;There was an old man of Peru
+Who dreamt he was eating his shoe
+    He woke up in the night
+    With a terrible fright
+And found it was perfectly true&lt;/PRE&gt;</code></pre>
+</div>
+
+<p>which will produce the following:</p>
+
+<div class="output">
+<pre><code>There was an old man of Peru
+Who dreamt he was eating his shoe
+    He woke up in the night
+    With a terrible fright
+And found it was perfectly true</code></pre>
+</div>
+
+<p>This can be useful where you already have, for example,
+tabulated data in a plain text file:</p>
+<div class="code">
+<pre><code>&lt;PRE&gt;
+                                             line
+There was an old man of Peru                    1
+Who dreamt he was eating his shoe               2
+    He woke up in the night                     3
+    With a terrible fright                      4
+And found it was perfectly true                 5
+&lt;/PRE&gt;</code></pre>
+</div>
+
+<p>which will produce the following:</p>
+
+<div class="output">
+<pre><code>
+                                             line
+There was an old man of Peru                    1
+Who dreamt he was eating his shoe               2
+    He woke up in the night                     3
+    With a terrible fright                      4
+And found it was perfectly true                 5
+</code></pre>
+</div>
+<p>whereas without the &lt;PRE&gt; it would have produced</p>
+<div class="output">
+<p>                                             line
+There was an old man of Peru                    1
+Who dreamt he was eating his shoe               2
+    He woke up in the night                     3
+    With a terrible fright                      4
+And found it was perfectly true                 5</p>
+</div>
+
+<p>&lt;PRE&gt; is thus very useful. However you should <strong>not</strong>
+use it as a substitute for HTML formatting when composing pages. Use it
+for converting existing text documents, or where the exact layout of
+characters is important (e.g. diagrams) but for ordinary text use the
+ordinary formatting elements such as &lt;P&gt;, &lt;LI&gt;, etc.</p>
+<hr>
+<p><small><a name="qtag" href="http://www.thuto.org/ubh/web/html/tags1.htm#doc_top">Back to top</a></small></p>
+<h2>Note on the &lt;Q&gt; tag</h2>
+<p>The &lt;Q&gt; tag is the equivalent of BLOCKQUOTE for short quotations.
+However, there are problems. Older browsers do not recognize it.
+In HTML&nbsp;4 the browser is supposed to add quotation marks:
+<q>This bit is within &lt;Q/&gt; tags</q>. But in HTML&nbsp;5 
+this will change and quotation marks will have to be added by the
+author. In view of all this you are probably safer avoiding it 
+at present.</p>
+
+<hr>
+<p><small><a name="special-characters" href="http://www.thuto.org/ubh/web/html/tags1.htm#doc_top">Back to top</a></small></p>
+<h2>Note on special characters</h2>
+<p>Some characters are not available on a standard keyboard. In HTML they 
+can be indicated by special character entities. For example, the e-acute
+character
+<span class="yellowbacktext">
+<font color="#CC0000">
+<strong><big>&nbsp;é&nbsp;</big></strong>
+</font>
+</span> 
+can be represented by 
+<span class="yellowbacktext">
+<font color="#CC0000">
+<big><strong>&nbsp;&amp;eacute;&nbsp;</strong></big>
+</font>
+</span>
+As you will see from this example, the special character entities start
+with an ampersand <span class="yellowbacktext"><big>&amp;</big></span>, and end with a 
+semicolon <span class="yellowbacktext"><big><big><strong>;</strong></big></big></span>. Between these is a string
+of letters which usually indicates the character to be shown.</p>
+<p>There is also an alternative system of referring to special characters
+by number but these are less easy to remember. On the other hand it
+can be more reliable if you are using the less common special
+characters. An example: the "spades" symbol &#9824; can be produced either
+by &amp;spades; (&#9824;) or by &amp;#9824; (&#9824;).</p>
+
+<p>Note that ampersand itself therefore cannot be written in an HTMl document 
+as just &amp; as that would indicate the start of a special character!
+Instead you have to use 
+<span class="yellowbacktext">&nbsp;&amp;amp;&nbsp;</span>.
+Also, &lt; and &gt; cannot be written as such in an HTMl document,
+because they indicate HTMl tags. Instead you must use
+<span class="yellowbacktext">&nbsp;&amp;lt;&nbsp;</span>
+for &lt; and 
+<span class="yellowbacktext">&nbsp;&amp;gt;&nbsp;</span>
+for &gt;. The letters stand for "less than" and "greater than".</p>
+<p>NB: these names are case sensitive, i.e. 
+<span class="yellowbacktext">&nbsp;&amp;eacute;&nbsp;</span> and 
+<span class="yellowbacktext">&nbsp;&amp;Eacute;&nbsp;</span>
+are different characters.</p>
+
+<h3>Some common special characters:</h3>
+
+<p>The following is a list of some of the more common special
+character entities. Not all of them will display in all browsers.
+If you see, in the right-hand box, not a special character but just
+a repeat of the code in the left-hand box, your browser has failed
+to recognize the code.</p>
+
+<table summary="Special characters in HTML" border="1" cellpadding="10">
+<tbody><tr>
+<th bgcolor="#FFCCFF" align="left">Character entity</th>
+<th bgcolor="#FF99FF" align="left">Special character</th>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;nbsp;</td>
+<td bgcolor="#FFFF99">Non-breaking space</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;amp;</td>
+<td bgcolor="#FFFF99">&amp; (ampersand)</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;lt;</td>
+<td bgcolor="#FFFF99">&lt;</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;gt;</td>
+<td bgcolor="#FFFF99">&gt;</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;copy;</td>
+<td bgcolor="#FFFF99">© (copyright symbol)</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;reg;</td>
+<td bgcolor="#FFFF99">® (Reg. trademark symbol)</td>
+</tr>
+
+
+
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;ne;</td>
+<td bgcolor="#FFFF99">&#8800; (not-equals sign; 
+a range of mathematical symbols are available)</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;plusmn;</td>
+<td bgcolor="#FFFF99">± (plus-minus)</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;deg;</td>
+<td bgcolor="#FFFF99">° (degree)</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;quot;</td>
+<td bgcolor="#FFFF99">" (Quotation mark)</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;ndash;</td>
+<td bgcolor="#FFFF99">– (n-dash)</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;mdash;</td>
+<td bgcolor="#FFFF99">— (m-dash)</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;para;</td>
+<td bgcolor="#FFFF99">¶ (paragraph symbol as used in word-processors)</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;pound;</td>
+<td bgcolor="#FFFF99">£ (pound sterling symbol)</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;euro;</td>
+<td bgcolor="#FFFF99">€ (Euro currency symbol)</td>
+</tr>
+
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;frac14;</td>
+<td bgcolor="#FFFF99">¼ (fraction 1/4)</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;frac12;</td>
+<td bgcolor="#FFFF99">½ (fraction 1/2)</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;frac34;</td>
+<td bgcolor="#FFFF99">¾ (fraction 3/4)</td>
+</tr>
+
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;eacute;</td>
+<td bgcolor="#FFFF99">é</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;Eacute;</td>
+<td bgcolor="#FFFF99">É</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;egrave;</td>
+<td bgcolor="#FFFF99">è</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;agrave;</td>
+<td bgcolor="#FFFF99">à</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;ccedil;</td>
+<td bgcolor="#FFFF99">ç</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;ecirc;</td>
+<td bgcolor="#FFFF99">ê</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;acirc;</td>
+<td bgcolor="#FFFF99">â</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;ucirc;;</td>
+<td bgcolor="#FFFF99">û</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;auml;</td>
+<td bgcolor="#FFFF99">ä</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;ouml;</td>
+<td bgcolor="#FFFF99">ö</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;uuml;</td>
+<td bgcolor="#FFFF99">ü</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;scaron;</td>
+<td bgcolor="#FFFF99">š</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;ntilde;</td>
+<td bgcolor="#FFFF99">ñ</td>
+</tr>
+
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;szlig;</td>
+<td bgcolor="#FFFF99">ß (the German character, not to be confused
+with beta (see below)</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC" class="sce">&amp;beta;</td>
+<td bgcolor="#FFFF99">&#946; (lower-case Beta; the whole Greek alphabet is accessible 
+like this)</td>
+</tr>
+</tbody></table>
+<hr>
+<p><small><a name="structural" href="http://www.thuto.org/ubh/web/html/tags1.htm#doc_top">Back to top</a></small></p>
+<h2>Note on structural <i>versus</i> formatting elements</h2>
+<p>It is important to remember that HTML is basically a way of
+defining the <em>logical structure</em> of a document, with elements
+such as paragraphs, lists, etc. There are some formatting elements such
+as &lt;I&gt; (italics) and until all browsers can read 
+<a href="http://www.thuto.org/ubh/web/html/css01.htm">style sheets</a> we will  continue to need them.</p>
+<p>Confusion sometimes arises as to the use of formatting elements 
+ and structural elements which produce the same effect. For example,
+the &lt;I&gt; formatting element produces italics. But so do the 
+&lt;EM&gt; (emphasis) element and the &lt;CITE&gt; (citation) element.
+The difference is that the structuring elements define information, which
+could be rendered in a variety of ways - e.g. non-visual user agents. 
+&lt;I&gt; defines the exact formatting rather than the information. 
+&lt;EM&gt; defines emphasis. &lt;CITE&gt; defines a citation: the
+official specification defines it specifically as a URI in fact.</p>
+
+<p>There are advantages to using structural elements wherever 
+they are understood by most browsers, but there are still
+practical limits to this. (Structural elements are most useful
+for technical things like computer code, which has the 
+&lt;CODE&gt; tag.) <br>
+However you <span style="color: #CC0000; font-weight: bolder">must not</span> 
+use a structural element to produce an effect
+unless the information is of the type described. 
+This problem arises commonly with the heading tags (&lt;H1&gt;, 
+&lt;H2&gt; etc.). Sometimes an author will use an H1 heading, and then
+find that for the next level of heading, H2 looks too big - so he or she
+uses H3. The point of the H1 to H6 headings is that they are used
+and nested <i>in order</i>. If you want to change the apparent size
+on screen you should use style sheets. (In any case, the appearance in
+someone else's browser may not be the same as in yours anyway.)</p>
+
+
+<p>To summarize, therefore:</p>
+
+<table summary="Structural versus formatting elements" width="100%" border="1" cellpadding="8" cellspacing="0" style="border: solid medium #00CC00">
+<tbody><tr>
+<th onmouseover="this.style.backgroundColor=&#39;#0000FF&#39;; this.style.color=&#39;#FFFFFF&#39;">Choice</th>
+<th onmouseover="this.style.backgroundColor=&#39;#0000FF&#39;; this.style.color=&#39;#FFFFFF&#39;">Assessment</th>
+<th onmouseover="this.style.backgroundColor=&#39;#0000FF&#39;; this.style.color=&#39;#FFFFFF&#39;">Comments</th>
+</tr>
+<tr>
+<td style="background-color: #CCFFCC">Using a structural element for the appropriate content</td>
+<td style="background-color: #009900; color: #FFFFFF; font-weight: bolder">Meritorious</td>
+<td style="background-color: #CCFFCC">This is a good thing unless the the appropriate 
+element is too new for most browsers
+and the formatting is essential</td>
+</tr>
+<tr>
+<td style="background-color: #FFFF99">Using HTML formatting</td>
+<td style="background-color: #999900; color: #FFFFFF; font-weight: bolder">Normal</td>
+<td style="background-color: #FFFF99">This is normal in the
+common case that
+(i) there is no easy structural element,
+or (ii) a structural element is too new for most browsers
+and the formatting is essential</td>
+</tr>
+<tr>
+<td style="background-color: #FF9999">Using a structural element for content of another type,
+just to get the formatting</td>
+<td style="background-color: #FF0000; color: #FFFFFF; font-weight: bolder">Bad</td>
+<td style="background-color: #FF9999">Hardly ever appropriate</td>
+</tr>
+</tbody></table>
+
+
+<hr width="50%" align="left">
+<p>I.e. - </p>
+<ul style="list-style-position: inside; background-color: #CCFFCC; padding: 8px">
+<li onmouseover="this.style.backgroundColor=&#39;#FFFFCC&#39;" onmouseout="this.style.backgroundColor=&#39;#CCFFCC&#39;">Where a structural element exists which is understood by most browsers,
+and you have content of that sort, use the structural element.</li>
+<li onmouseover="this.style.backgroundColor=&#39;#FFFFCC&#39;" onmouseout="this.style.backgroundColor=&#39;#CCFFCC&#39;">Where a structural element 
+exists which is <em>not</em> yet understood by most browsers,
+and you have content of that sort, you can use the structural element
+but it is reasonable to use formatting elements instead so that more
+readers will understand you.</li>
+<li onmouseover="this.style.backgroundColor=&#39;#FFFFCC&#39;" onmouseout="this.style.backgroundColor=&#39;#CCFFCC&#39;">Where a structural element 
+exists and you have content <em>not</em> of that sort, you must
+<em>not</em> use the structural element. Use formatting elements.</li>
+</ul>
+
+<hr>
+<p><small><a name="deprecated-def" href="http://www.thuto.org/ubh/web/html/tags1.htm#doc_top">Back to top</a></small></p>
+<h2>The meaning of "deprecated".</h2>
+<p>The official HTML standards are issued by the 
+<a href="http://www.w3.org/">W3 Consortium</a>.
+In the HTML&nbsp;4.01 Specification, the following definition
+appears:</p>
+
+    <blockquote style="background-color: #ffffcc; padding: 3px">
+    <p>A deprecated element or attribute is one that has been 
+    outdated by newer constructs. Deprecated elements are 
+    defined in the reference manual in appropriate locations, 
+    but are clearly marked as deprecated. Deprecated elements 
+    may become obsolete in future versions of HTML.</p>
+
+    <p>User agents should continue to support deprecated 
+    elements for reasons of backward compatibility.</p>
+    </blockquote>
+<p>The general English sense of the word is that disapproval
+of something is being expressed.</p>
+    
+
+
+<hr>
+<p><a name="doc_end" href="http://www.thuto.org/ubh/web/html/tags1.htm#doc_top">Back to top</a></p>
+
+<p><small>Copyright © 2000 University of Botswana History Department
+<br>
+Last updated 8 June 2008</small></p>
+
+
+
+</body></html>
